@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Kimani | Full-Stack & AI Specialist</title>
+    <style>
+        :root { --primary: #ff4d94; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
+        body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: auto; padding: 2rem; }
+        header { text-align: center; padding: 5rem 0 3rem; }
+        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--primary); object-fit: cover; margin-bottom: 1rem; }
+        .badge { background: #334155; border: 1px solid var(--primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
+        .project-card { border: 1px solid #334155; padding: 2rem; border-radius: 16px; background: var(--card); margin: 2.5rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+        .btn { display: inline-block; padding: 0.7rem 1.4rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 0.5rem; transition: 0.3s; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+        footer { text-align: center; padding: 4rem 0; border-top: 1px solid #334155; margin-top: 3rem; }
+        a { color: var(--primary); text-decoration: none; font-weight: 500; }
+        @media (max-width: 600px) { .skills-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="your-photo.png" alt="Peter Kimani" class="profile-img">
+            <h1>Peter Kimani Njeri</h1>
+            <p><span class="badge">EF SET C1 ADVANCED</span></p>
+            <p style="font-size: 1.2rem; color: #94a3b8;">Full-Stack Developer & AI Training Specialist</p>
+        </header>
+
+        <section id="work">
+            <div class="project-card">
+                <h2 style="margin-top: 0;">🚀 Featured: JC Energy Portal</h2>
+                <p>A production-ready ERP system for retail fuel management. Automated inventory tracking and shift reconciliation logic.</p>
+                <p><strong>Stack:</strong> Python (Streamlit), PostgreSQL (Supabase), GitHub Actions</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://jc-energy-app-oggcah2jnvmumtjhexrxpd.streamlit.app/" class="btn">Launch Live App</a>
+                    <a href="https://github.com/Rockykymm/Jc-Energy-PORTAL" style="margin-left: 10px; color: #94a3b8;">View Source Code →</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="skills-grid">
+            <div class="project-card" style="margin: 0;">
+                <h3 style="color: var(--primary);">🛠️ Engineering</h3>
+                <ul style="padding-left: 1.2rem;">
+                    <li>Python & SQL</li>
+                    <li>Full-Stack Development</li>
+                    <li>Cloud Infrastructure</li>
+                    <li>Secure Session Handling</li>
+                </ul>
+            </div>
+            <div class="project-card" style="margin: 0;">
+                <h3 style="color: var(--primary);">🧠 AI & Data</h3>
+                <ul style="padding-left: 1.2rem;">
+                    <li>Tier 3 Data Annotation</li>
+                    <li>RLHF Methodologies</li>
+                    <li>Video Logic Vetting</li>
+                    <li>High-Integrity Datasets</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Ready to collaborate on high-impact projects?</p>
+            <a href="https://github.com/Rockykymm">GitHub</a> • 
+            <a href="https://www.linkedin.com/in/rockykim1739">LinkedIn</a> • 
+            <a href="mailto:rockykim9@gmail.com">Email Me</a>
+        </footer>
+    </div>
+</body>
+</html>
