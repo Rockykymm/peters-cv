@@ -11,10 +11,11 @@
         header { text-align: center; padding: 5rem 0 3rem; }
         .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--primary); object-fit: cover; margin-bottom: 1rem; }
         .badge { background: #334155; border: 1px solid var(--primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
-        .project-card { border: 1px solid #334155; padding: 2rem; border-radius: 16px; background: var(--card); margin: 2.5rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
-        .btn { display: inline-block; padding: 0.7rem 1.4rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 0.5rem; transition: 0.3s; }
+        .project-card { border: 1px solid #334155; padding: 2rem; border-radius: 16px; background: var(--card); margin: 2.5rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); position: relative; }
+        .btn { display: inline-block; padding: 0.7rem 1.4rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 0.5rem 0.5rem 0.5rem 0; transition: 0.3s; }
         .btn:hover { opacity: 0.8; transform: translateY(-2px); }
         .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+        .tag { font-size: 0.75rem; background: #334155; padding: 2px 8px; border-radius: 4px; margin-right: 5px; color: #94a3b8; border: 1px solid #475569; }
         footer { text-align: center; padding: 4rem 0; border-top: 1px solid #334155; margin-top: 3rem; }
         a { color: var(--primary); text-decoration: none; font-weight: 500; }
         @media (max-width: 600px) { .skills-grid { grid-template-columns: 1fr; } }
@@ -26,38 +27,49 @@
             <img src="your-photo.png" alt="Peter Kimani" class="profile-img">
             <h1>Peter Kimani Njeri</h1>
             <p><span class="badge">EF SET C1 ADVANCED</span></p>
-            <p style="font-size: 1.2rem; color: #94a3b8;">Full-Stack Developer & AI Training Specialist</p>
+            <p style="font-size: 1.2rem; color: #94a3b8;">Full-Stack Developer & AI Systems Architect</p>
         </header>
 
         <section id="work">
             <div class="project-card">
-                <h2 style="margin-top: 0;">🚀 Featured: JC Energy Portal</h2>
-                <p>A production-ready ERP system for retail fuel management. Automated inventory tracking and shift reconciliation logic.</p>
-                <p><strong>Stack:</strong> Python (Streamlit), PostgreSQL (Supabase), GitHub Actions</p>
-                <div style="margin-top: 1.5rem;">
-                    <a href="https://jc-energy-app-oggcah2jnvmumtjhexrxpd.streamlit.app/" class="btn">Launch Live App</a>
-                    <a href="https://github.com/Rockykymm/Jc-Energy-PORTAL" style="margin-left: 10px; color: #94a3b8;">View Source Code →</a>
+                <h2 style="margin-top: 0; color: var(--primary);">🚀 Featured: JC Energy Portal v2</h2>
+                <p>A production-ready ERP system migrated from Python to <strong>Next.js 15</strong> for sub-second performance. Handles retail fuel logistics, automated inventory tracking, and real-time shift reconciliation.</p>
+                <div style="margin-bottom: 1rem;">
+                    <span class="tag">Next.js 15</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span>
                 </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://jc-energy-app.vercel.app" class="btn">Launch Live App</a>
+                    <a href="https://github.com/Rockykymm/JC-ENERGY-Node-next.js" style="color: #94a3b8;">View Source Code →</a>
+                </div>
+            </div>
+
+            <div class="project-card" style="border-left: 4px solid var(--primary);">
+                <h2 style="margin-top: 0; color: #f8fafc;">🏫 Mt. Kenya Academy ERP</h2>
+                <p>An institutional management platform designed for Kenyan schools. Currently scaling to handle 1,000+ students with automated <strong>M-Pesa Daraja API</strong> fee integration and CBC student tracking.</p>
+                <div style="margin-bottom: 1rem;">
+                    <span class="tag">Fintech</span><span class="tag">M-Pesa Integration</span><span class="tag">ERP</span>
+                </div>
+                <p style="font-size: 0.85rem; color: #94a3b8; font-style: italic;">Status: Architecture & Prototype Phase</p>
             </div>
         </section>
 
         <div class="skills-grid">
             <div class="project-card" style="margin: 0;">
-                <h3 style="color: var(--primary);">🛠️ Engineering</h3>
+                <h3 style="color: var(--primary);">⚒️ Engineering</h3>
                 <ul style="padding-left: 1.2rem;">
-                    <li>Python & SQL</li>
-                    <li>Full-Stack Development</li>
-                    <li>Cloud Infrastructure</li>
-                    <li>Secure Session Handling</li>
+                    <li>TypeScript & Next.js 15</li>
+                    <li>Node.js Backend Systems</li>
+                    <li>React 19 Ecosystem</li>
+                    <li>Supabase & PostgreSQL</li>
                 </ul>
             </div>
             <div class="project-card" style="margin: 0;">
                 <h3 style="color: var(--primary);">🧠 AI & Data</h3>
                 <ul style="padding-left: 1.2rem;">
                     <li>Tier 3 Data Annotation</li>
-                    <li>RLHF Methodologies</li>
-                    <li>Video Logic Vetting</li>
-                    <li>High-Integrity Datasets</li>
+                    <li>RLHF & Video Logic Vetting</li>
+                    <li>LLM-Integrated Applications</li>
+                    <li>Secure Session Handling</li>
                 </ul>
             </div>
         </div>
