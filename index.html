@@ -3,64 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Kimani | Full-Stack & AI Specialist</title>
+    <title>Peter Kimani | Systems Architect & AI Specialist</title>
     <style>
         :root { --primary: #ff4d94; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
         body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
         .container { max-width: 800px; margin: auto; padding: 2rem; }
         header { text-align: center; padding: 5rem 0 3rem; }
         .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--primary); object-fit: cover; margin-bottom: 1rem; }
-        .badge { background: #334155; border: 1px solid var(--primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
-        .project-card { border: 1px solid #334155; padding: 2rem; border-radius: 16px; background: var(--card); margin: 2.5rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+        
+        /* Updated Badge as a verification link */
+        .badge { 
+            display: inline-block;
+            background: #334155; 
+            border: 1px solid var(--primary); 
+            padding: 0.3rem 0.8rem; 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            color: #f8fafc;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .badge:hover { background: var(--primary); transform: translateY(-2px); }
+
+        .philosophy { text-align: center; color: #94a3b8; font-size: 1.1rem; max-width: 650px; margin: 0 auto 3rem auto; }
+
+        .project-card { border: 1px solid #334155; padding: 2rem; border-radius: 16px; background: var(--card); margin: 2.5rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); transition: 0.3s; }
+        .project-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        
         .btn { display: inline-block; padding: 0.7rem 1.4rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 0.5rem 0.5rem 0.5rem 0; transition: 0.3s; }
-        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
-        .tag { font-size: 0.75rem; background: #334155; padding: 2px 8px; border-radius: 4px; margin-right: 5px; color: #94a3b8; border: 1px solid #475569; }
-        .login-tip { background: rgba(255, 77, 148, 0.1); border-left: 3px solid var(--primary); padding: 10px; margin-top: 1rem; font-size: 0.9rem; color: #f8fafc; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); box-shadow: 0 0 15px rgba(255, 77, 148, 0.3); }
+        
+        .tag { font-size: 0.75rem; background: #334155; padding: 2px 8px; border-radius: 4px; margin-right: 5px; color: #94a3b8; border: 1px solid #475569; display: inline-block; margin-bottom: 5px; }
+        
+        .login-tip { background: rgba(255, 77, 148, 0.1); border-left: 3px solid var(--primary); padding: 12px; margin-top: 1rem; font-size: 0.9rem; color: #f8fafc; border-radius: 0 8px 8px 0; }
+        
         footer { text-align: center; padding: 4rem 0; border-top: 1px solid #334155; margin-top: 3rem; }
-        a { color: var(--primary); text-decoration: none; font-weight: 500; }
-        @media (max-width: 600px) { .skills-grid { grid-template-columns: 1fr; } }
+        footer a { color: var(--primary); text-decoration: none; font-weight: 500; margin: 0 10px; }
+        
+        @media (max-width: 600px) { .btn { width: 100%; text-align: center; } }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="your-photo.png" alt="Peter Kimani" class="profile-img">
+            <img src="your-photo.png" alt="Peter Kimani Njeri" class="profile-img">
             <h1>Peter Kimani Njeri</h1>
-            <p><span class="badge">EF SET C1 ADVANCED</span></p>
+            <p>
+                <a href="https://cert.efset.org/8aa5TR" target="_blank" class="badge" title="Click to verify official C2 Certificate">
+                    EF SET C2 PROFICIENT (80/100) ✓
+                </a>
+            </p>
             <p style="font-size: 1.2rem; color: #94a3b8;">Full-Stack Developer & AI Systems Architect</p>
         </header>
+
+        <section class="philosophy">
+            Specializing in architecting <strong>Zero-to-One</strong> fintech and enterprise systems within <strong>short, high-impact lifecycles</strong>. Expert in AI-augmented engineering using Cursor, Groq, and Whisperflow.
+        </section>
 
         <section id="work">
             <div class="project-card">
                 <h2 style="margin-top: 0; color: var(--primary);">🚀 Featured: JC Energy Portal</h2>
-                <p>A production-ready ERP system for retail fuel management. Currently running on <strong>React</strong> and <strong>Vercel</strong> for high-speed logistics and automated inventory tracking.</p>
+                <p>A production-ready ERP system for retail fuel logistics. Engineered to eliminate revenue leakage through automated shift reconciliation and real-time inventory tracking.</p>
                 <div style="margin-bottom: 1rem;">
-                    <span class="tag">React</span><span class="tag">Vercel</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span>
+                    <span class="tag">React</span><span class="tag">Vercel</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">Fintech</span>
                 </div>
                 <div class="login-tip">
-                    🔑 <strong>Try it out:</strong> Use Login ID <code>001</code> to explore the live dashboard.
+                    🔑 <strong>Manager Demo:</strong> Use Login ID <code>001</code> to explore the live dashboard.
                 </div>
                 <div style="margin-top: 1.5rem;">
-                    <a href="https://jc-energy-app.vercel.app" class="btn">Launch Live App</a>
-                    <a href="https://github.com/Rockykymm/Jc-Energy-PORTAL" style="color: #94a3b8;">View Source Code →</a>
+                    <a href="https://jc-energy-app.vercel.app" target="_blank" class="btn">Launch Live App</a>
+                    <a href="https://github.com/Rockykymm/Jc-Energy-PORTAL" target="_blank" style="color: #94a3b8; font-size: 0.9rem;">View Source Code →</a>
                 </div>
             </div>
 
             <div class="project-card" style="border-left: 4px solid var(--primary);">
-                <h2 style="margin-top: 0; color: #f8fafc;">🏫 Mt. Kenya Academy ERP</h2>
-                <p>An institutional management platform designed to scale. This project is built using <strong>Next.js 15</strong> and <strong>Node.js</strong> to handle secure administrative oversight and automated fee tracking for 1,000+ students.</p>
+                <h2 style="margin-top: 0; color: #f8fafc;">🏫 Mt. Kenya Academy ERP (CBC)</h2>
+                <p>An institutional ecosystem integrating the <strong>Safaricom Daraja API</strong> for automated fee collection and <strong>Groq LPU Inference</strong> for generating KICD-compliant CBC reports.</p>
                 <div style="margin-bottom: 1rem;">
-                    <span class="tag">Next.js 15</span><span class="tag">Node.js</span><span class="tag">Fintech</span>
+                    <span class="tag">Next.js 15</span><span class="tag">Python/Flask</span><span class="tag">M-Pesa API</span><span class="tag">Groq AI</span><span class="tag">Whisperflow</span>
                 </div>
-                <p style="font-size: 0.85rem; color: #94a3b8; font-style: italic;">Status: Active Development with M-Pesa Daraja API Integration</p>
+                <div class="login-tip">
+                    🔑 <strong>Production Demo:</strong> Use Login ID <code>ADMIN-DEMO</code> to explore registrar analytics.
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://school-project-lm8b-git-main-rockykymms-projects.vercel.app/" target="_blank" class="btn">Launch Live Demo</a>
+                    <a href="https://github.com/Rockykymm/Mt-Kenya-Academy-ERP" target="_blank" style="color: #94a3b8; font-size: 0.9rem;">View Source Code →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2 style="margin-top: 0; color: #f8fafc;">📜 Gikuyu Records Portal</h2>
+                <p>High-performance records management system optimized for data integrity and rapid retrieval. Designed for institutional scalability and long-term historical data preservation.</p>
+                <div style="margin-bottom: 1rem;">
+                    <span class="tag">React</span><span class="tag">Vercel</span><span class="tag">Data Architecture</span><span class="tag">Scalability</span>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="btn" style="background: #334155; border: 1px solid var(--primary);">Explore Portal</a>
+                </div>
             </div>
         </section>
 
         <footer>
             <p>Ready to collaborate on high-impact projects?</p>
-            <a href="https://github.com/Rockykymm">GitHub</a> • 
-            <a href="https://www.linkedin.com/in/rockykim1739">LinkedIn</a> • 
-            <a href="mailto:rockykim9@gmail.com">Email Me</a>
+            <div style="margin-bottom: 1rem;">
+                <a href="https://github.com/Rockykymm" target="_blank">GitHub</a> • 
+                <a href="https://www.linkedin.com/in/rockykim1739" target="_blank">LinkedIn</a> • 
+                <a href="mailto:rockykim9@gmail.com">Email Me</a>
+            </div>
+            <p style="font-size: 0.75rem; color: #64748b;">Developing from the slopes of Mt. Kenya • AI-Augmented Engineering &copy; 2026</p>
         </footer>
     </div>
 </body>
