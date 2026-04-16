@@ -10,36 +10,17 @@
         .container { max-width: 800px; margin: auto; padding: 2rem; }
         header { text-align: center; padding: 5rem 0 3rem; }
         .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--primary); object-fit: cover; margin-bottom: 1rem; }
-        
-        .badge { 
-            display: inline-block;
-            background: #334155; 
-            border: 1px solid var(--primary); 
-            padding: 0.3rem 0.8rem; 
-            border-radius: 20px; 
-            font-size: 0.85rem; 
-            font-weight: bold; 
-            color: #f8fafc;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+        .badge { display: inline-block; background: #334155; border: 1px solid var(--primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: bold; color: #f8fafc; text-decoration: none; transition: 0.3s; }
         .badge:hover { background: var(--primary); transform: translateY(-2px); }
-
         .philosophy { text-align: center; color: #94a3b8; font-size: 1.1rem; max-width: 650px; margin: 0 auto 3rem auto; }
-
         .project-card { border: 1px solid #334155; padding: 2rem; border-radius: 16px; background: var(--card); margin: 2.5rem 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); transition: 0.3s; }
         .project-card:hover { transform: translateY(-5px); border-color: var(--primary); }
-        
         .btn { display: inline-block; padding: 0.7rem 1.4rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 0.5rem 0.5rem 0.5rem 0; transition: 0.3s; }
         .btn:hover { opacity: 0.8; transform: translateY(-2px); box-shadow: 0 0 15px rgba(255, 77, 148, 0.3); }
-        
         .tag { font-size: 0.75rem; background: #334155; padding: 2px 8px; border-radius: 4px; margin-right: 5px; color: #94a3b8; border: 1px solid #475569; display: inline-block; margin-bottom: 5px; }
-        
         .login-tip { background: rgba(255, 77, 148, 0.1); border-left: 3px solid var(--primary); padding: 12px; margin-top: 1rem; font-size: 0.9rem; color: #f8fafc; border-radius: 0 8px 8px 0; }
-        
         footer { text-align: center; padding: 4rem 0; border-top: 1px solid #334155; margin-top: 3rem; }
         footer a { color: var(--primary); text-decoration: none; font-weight: 500; margin: 0 10px; }
-        
         @media (max-width: 600px) { .btn { width: 100%; text-align: center; } }
     </style>
 </head>
@@ -57,7 +38,7 @@
         </header>
 
         <section class="philosophy">
-            Specializing in architecting <strong>Zero-to-One</strong> fintech and enterprise systems within <strong>short, high-impact lifecycles</strong>. Expert in AI-augmented engineering using Cursor, Groq, and Whisperflow.
+            Specializing in architecting <strong>Zero-to-One</strong> fintech and enterprise systems within <strong>short, high-impact lifecycles</strong>. Expert in decoupled Full-Stack architectures using <strong>Vercel (Frontend)</strong> and <strong>Render (Backend)</strong>.
         </section>
 
         <section id="work">
@@ -78,9 +59,9 @@
 
             <div class="project-card" style="border-left: 4px solid var(--primary);">
                 <h2 style="margin-top: 0; color: #f8fafc;">🏫 Mt. Kenya Academy ERP (CBC)</h2>
-                <p>An institutional ecosystem integrating the <strong>Safaricom Daraja API</strong> for automated fee collection and <strong>Groq LPU Inference</strong> for generating KICD-compliant CBC reports.</p>
+                <p>A mission-critical management platform utilizing a <strong>decoupled architecture</strong>: Next.js (Frontend) on Vercel and a Python/Flask API (Backend) on Render. Features <strong>M-Pesa Daraja</strong> integration and <strong>Groq AI</strong> reports.</p>
                 <div style="margin-bottom: 1rem;">
-                    <span class="tag">Next.js 15</span><span class="tag">Python/Flask</span><span class="tag">M-Pesa API</span><span class="tag">Groq AI</span><span class="tag">Whisperflow</span>
+                    <span class="tag">Vercel</span><span class="tag">Render (API)</span><span class="tag">Next.js 15</span><span class="tag">Python/Flask</span><span class="tag">M-Pesa API</span>
                 </div>
                 <div class="login-tip">
                     🔑 <strong>Production Demo:</strong> Login with Username: <code>Rocky</code> | Password: <code>1234</code>
